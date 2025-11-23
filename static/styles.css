@@ -1,4 +1,6 @@
-
+#title {
+ color: #fff;
+}
 .cardtext{
     padding-left: 1cm;
     padding-right: 1cm;
@@ -15,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #f2f2f2;
+    background: linear-gradient(135deg, #6fb1fc, #4364f7);
     margin: 0;
     font-family: Arial, sans-serif;
   }
@@ -36,8 +38,9 @@ body {
     flex-direction: column;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease,  opacity 0.3s ease;
   }
+  
   
   .card img {
     width: 100%;
@@ -61,4 +64,23 @@ body {
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   }
+ .tag {
+  background: #eef4ff;
+  padding: 6px 12px;
+  margin: 0 auto;          /* center horizontally */
+  display: inline-block;   /* so margin auto works nicely */
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3b57f0;
+}
+
   
+      button {
+      transition: transform 0.35s cubic-bezier(0.22,1,0.36,1)
+     }
+     
+      button:hover {
+       transform: scale(1.1);
+       box-shadow: 0 6px 18px;
+     }

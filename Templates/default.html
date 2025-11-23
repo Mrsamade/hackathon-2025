@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Match: Find housemates!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class="app">
+            <div id="titlebar">
+                <h1>Match</h1>
+            </div>
+            <div class="card-stack">
+              {% for profile in profiles %}
+              <div class="card" data-id="{{ profile.id }}">
+                <img src="{{ profile.image_url }}" alt="" />
+                <h2 class="cardtext">
+                  {{ profile.name }},
+                </h2>
+                <div class="cardtext">
+                  <span class="tag">{{ profile.subject }}</span>
+                </div>
+                <p class="cardtext">{{ profile.bio }}</p>
+              </div>
+              {% endfor %}
+            </div>
+              
+            
+          
+            <div class="buttons">
+              <button id="nope">❌</button>
+              <button id="like">✅</button>
+            </div>
+          </div>
+          <script src="{{ url_for('static', filename='app.js') }}"></script>
+          
+          
+        
+    </body>
+</html>
