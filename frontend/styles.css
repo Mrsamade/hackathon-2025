@@ -1,0 +1,64 @@
+
+.cardtext{
+    padding-left: 1cm;
+    padding-right: 1cm;
+}
+
+.cardtext , p {
+    text-align: center;
+}
+#titlebar{
+    text-align: center;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card-stack {
+    position: relative;
+    width: 300px;
+    height: 450px;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  button {
+    border: none;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
